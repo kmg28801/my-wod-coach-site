@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kmg28801.github.io/my-wod-coach/sitemap.xml
