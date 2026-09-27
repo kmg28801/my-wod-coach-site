@@ -10,38 +10,127 @@
 <meta property="og:description" content="2026년 9월 18일 오늘의 와드: Ascending AMRAP — AMRAP 12min, 14 toes-to-bar">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-18/">
+<meta property="og:site_name" content="My WOD Coach">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"2026년 9월 18일(금) 크로스핏 와드 — Ascending AMRAP | My WOD Coach","datePublished":"2026-09-18","inLanguage":"ko","mainEntityOfPage":"https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-18/","author":{"@type":"Organization","name":"My WOD Coach"}}</script>
 <style>
-:root{color-scheme:dark}
+:root{
+  --bg:#0b0b0d; --surface:#141417; --line:#26262b;
+  --chalk:#e9e9e5; --dim:#8a8a91; --accent:#ffd166;
+  color-scheme:dark;
+}
 *{box-sizing:border-box}
-body{margin:0;background:#060607;color:#ededf0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
-main{max-width:720px;margin:0 auto;padding:32px 20px 72px}
-a{color:#ffd166}
-h1{font-size:28px;line-height:1.3;margin:0 0 8px}
-h2{font-size:20px;margin:40px 0 4px;border-top:1px solid #26262b;padding-top:28px}
-h3{font-size:15px;margin:24px 0 6px;color:#ffd166;text-transform:uppercase;letter-spacing:.06em}
-.meta{color:#8e8e93;font-size:14px;margin:0 0 24px}
-.tag{display:inline-block;background:#1c1c20;border:1px solid #2e2e34;border-radius:999px;padding:2px 10px;font-size:13px;color:#c9c9cf;margin-right:6px}
-ul{margin:4px 0 0;padding-left:20px}
-li{margin:3px 0}
-.cta{display:block;margin:40px 0;padding:20px;background:#15151a;border:1px solid #2e2e34;border-radius:14px}
-.cta b{display:block;font-size:18px;margin-bottom:6px}
-.cta p{margin:0 0 14px;color:#a8a8ae;font-size:15px}
-.btn{display:inline-block;background:#ffd166;color:#111;padding:11px 20px;border-radius:10px;font-weight:700;text-decoration:none}
-nav{margin:0 0 28px;font-size:14px}
-footer{margin-top:56px;padding-top:20px;border-top:1px solid #26262b;color:#6d6d73;font-size:13px}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--chalk);
+  font:400 16px/1.6 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+main{max-width:660px;margin:0 auto;padding:24px 20px 80px}
+
+/* 머리 */
+.top{display:flex;align-items:baseline;gap:10px;margin:0 0 28px}
+.top a.brand{font-weight:700;letter-spacing:-.01em}
+.top .sep{color:var(--line)}
+.top a.sub{color:var(--dim);font-size:14px}
+
+/* 날짜 스트립 */
+.strip{display:flex;gap:6px;overflow-x:auto;margin:0 -20px 32px;padding:0 20px 4px;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.strip a{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:1px;
+  min-width:52px;padding:8px 6px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.strip a b{font-size:14px;font-weight:600}
+.strip a span{font-size:11px;color:var(--dim)}
+.strip a.on{border-color:var(--accent);background:rgba(255,209,102,.1)}
+.strip a.on b{color:var(--accent)}
+
+/* 와드 헤더 */
+.wod-date{color:var(--dim);font-size:14px;margin:0 0 4px;letter-spacing:.02em}
+h1{font-size:30px;line-height:1.22;letter-spacing:-.02em;margin:0 0 12px;font-weight:700}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 28px}
+.tags span{font-size:12px;color:var(--dim);border:1px solid var(--line);border-radius:999px;padding:3px 10px;letter-spacing:.04em;text-transform:uppercase}
+
+/* 파트 */
+.part{margin:0 0 10px;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.part--main{border-color:#3a3a42;padding:20px;background:#17171b}
+.part-head{display:flex;align-items:center;gap:8px;margin:0 0 10px}
+.part-head .kind{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--bg);background:var(--dim);border-radius:4px;padding:2px 6px}
+.part--main .kind{background:var(--accent)}
+.part-head .label{font-size:13px;color:var(--dim)}
+.pres{margin:0 0 12px;font-size:15px;color:var(--dim)}
+.part--main .pres{font-size:17px;color:var(--chalk);font-weight:600}
+
+.moves{list-style:none;margin:0;padding:0;
+  font:500 16px/1.75 ui-monospace,SFMono-Regular,Menlo,monospace}
+.part--main .moves{font-size:19px;line-height:1.7}
+.moves li{padding-left:14px;position:relative;overflow-wrap:anywhere}
+.moves li::before{content:"";position:absolute;left:0;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--line)}
+.part--main .moves li::before{background:var(--accent)}
+
+.cues{margin:14px 0 0;padding:12px 0 0;border-top:1px dashed var(--line);display:grid;gap:5px}
+.cues div{display:flex;gap:8px;font-size:13.5px}
+.cues dt{flex:0 0 auto;color:var(--accent);opacity:.85;min-width:44px}
+.cues dd{margin:0;color:var(--dim)}
+
+/* 섹션 */
+h2{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);
+  margin:44px 0 14px;font-weight:600}
+.list{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.list li{background:var(--bg)}
+.list a{display:flex;align-items:baseline;gap:10px;padding:13px 16px}
+.list a:hover{background:var(--surface)}
+.list .d{color:var(--dim);font-size:13px;flex:0 0 74px;font-variant-numeric:tabular-nums}
+.list .t{font-size:15px}
+
+/* 이웃 이동 */
+.neighbors{display:flex;gap:10px;margin:32px 0 0}
+.neighbors a{flex:1;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.neighbors a span{display:block;font-size:11px;color:var(--dim);letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px}
+.neighbors a b{font-size:14px;font-weight:500}
+.neighbors .r{text-align:right}
+
+/* CTA */
+.cta{margin:44px 0 0;padding:24px;background:linear-gradient(180deg,#17171b,#121215);border:1px solid var(--line);border-radius:16px}
+.cta b{display:block;font-size:19px;letter-spacing:-.01em;margin:0 0 8px}
+.cta p{margin:0 0 18px;color:var(--dim);font-size:15px;line-height:1.6}
+.btn{display:inline-block;background:var(--accent);color:#111;padding:12px 22px;border-radius:10px;font-weight:700;font-size:15px}
+
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:#63636a;font-size:13px;line-height:1.7}
+footer a{color:var(--dim);text-decoration:underline;text-underline-offset:2px}
+
+@media (max-width:420px){
+  h1{font-size:25px}
+  .part--main .moves{font-size:17px}
+  main{padding:20px 16px 64px}
+  .strip{margin-left:-16px;margin-right:-16px;padding-left:16px;padding-right:16px}
+}
 </style>
 </head>
 <body><main>
-<nav><a href="https://kmg28801.github.io/my-wod-coach-site/">My WOD Coach</a> › <a href="https://kmg28801.github.io/my-wod-coach-site/wod/">와드</a></nav>
-<h1>2026년 9월 18일 크로스핏 와드 — Ascending AMRAP</h1>
-<p class="meta"><span class="tag">AMRAP</span><span class="tag">gymnastic</span></p>
-<h3>Warm-up</h3><p class="meta" style="margin:0 0 4px">General Prep</p><ul><li>3 rounds</li><li>10 cal easy row</li><li>10 air squats</li><li>10 push-ups</li><li>10 empty-bar Romanian deadlifts</li><li>cap : 10min</li></ul><h3>Gymnastic</h3><p class="meta" style="margin:0 0 4px">Ascending AMRAP</p><ul><li>AMRAP 12min</li><li>14 toes-to-bar</li><li>11 single-arm DB hang snatch (50/35 lb x 1 DB)</li><li>11 burpee</li><li>라운드마다 각 동작 +1씩 증가</li><li>강도 : 첫 라운드는 아주 쉬워야 한다 — 후반에 급격히 무거워진다</li><li>목표 : 후반 라운드 속도 저하 10% 이내로 유지</li><li>기록 : rounds + reps</li></ul><h3>Accessory</h3><p class="meta" style="margin:0 0 4px">deficit push-up + belt squat</p><ul><li>3sets quality</li><li>10-15 deficit push-up</li><li>10-15 pendlay row</li><li>10/10 belt squat</li><li>30-45sec dead hang</li><li>30-45sec weighted V-up</li><li>휴식 : 2:00</li></ul>
+<div class="top"><a class="brand" href="https://kmg28801.github.io/my-wod-coach-site/">My WOD Coach</a><span class="sep">/</span><a class="sub" href="https://kmg28801.github.io/my-wod-coach-site/wod/">와드 아카이브</a></div>
+<nav class="strip" aria-label="날짜별 와드"><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-26/"><b>9.26</b><span>토</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-25/"><b>9.25</b><span>금</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-24/"><b>9.24</b><span>목</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-23/"><b>9.23</b><span>수</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-22/"><b>9.22</b><span>화</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-21/"><b>9.21</b><span>월</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-19/"><b>9.19</b><span>토</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-18/" class="on"><b>9.18</b><span>금</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-17/"><b>9.17</b><span>목</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-16/"><b>9.16</b><span>수</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-15/"><b>9.15</b><span>화</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-14/"><b>9.14</b><span>월</span></a></nav><p class="wod-date">2026년 9월 18일 금요일</p>
+<h1>Ascending AMRAP</h1>
+<div class="tags"><span>AMRAP</span><span>gymnastic</span></div><section class="part">
+  <div class="part-head"><span class="kind">준비</span><span class="label">Warm-up</span></div>
+  <p class="pres">General Prep</p>
+  <ul class="moves"><li>3 rounds</li><li>10 cal easy row</li><li>10 air squats</li><li>10 push-ups</li><li>10 empty-bar Romanian deadlifts</li></ul><dl class="cues"><div><dt>cap</dt><dd>10min</dd></div></dl>
+</section><section class="part part--main">
+  <div class="part-head"><span class="kind">메인</span><span class="label">Gymnastic</span></div>
+  <p class="pres">Ascending AMRAP</p>
+  <ul class="moves"><li>AMRAP 12min</li><li>14 toes-to-bar</li><li>11 single-arm DB hang snatch (50/35 lb x 1 DB)</li><li>11 burpee</li><li>라운드마다 각 동작 +1씩 증가</li></ul><dl class="cues"><div><dt>강도</dt><dd>첫 라운드는 아주 쉬워야 한다 — 후반에 급격히 무거워진다</dd></div><div><dt>목표</dt><dd>후반 라운드 속도 저하 10% 이내로 유지</dd></div><div><dt>기록</dt><dd>rounds + reps</dd></div></dl>
+</section><section class="part">
+  <div class="part-head"><span class="kind">보조</span><span class="label">Accessory</span></div>
+  <p class="pres">deficit push-up + belt squat</p>
+  <ul class="moves"><li>3sets quality</li><li>10-15 deficit push-up</li><li>10-15 pendlay row</li><li>10/10 belt squat</li><li>30-45sec dead hang</li><li>30-45sec weighted V-up</li></ul><dl class="cues"><div><dt>휴식</dt><dd>2:00</dd></div></dl>
+</section><div class="neighbors">
+<a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-17/"><span>이전</span><b>← 9월 17일 목</b></a>
+<a class="r" href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-19/"><span>다음</span><b>9월 19일 토 →</b></a>
+</div>
 <div class="cta">
-  <b>내 기록에 맞는 와드를 받아보세요</b>
-  <p>여기 있는 와드는 누구에게나 같습니다. 앱에서 1RM을 넣으면 오늘 들 무게가 계산되고, 8주 개인화 프로그램이 만들어집니다. 첫 7일은 무료입니다.</p>
+  <b>이 와드, 나에게 맞는 무게는?</b>
+  <p>여기 적힌 Rx는 모두에게 같은 숫자입니다. 앱에 1RM을 넣으면 그 무게가 <b style="display:inline;font-size:inherit">내 1RM의 몇 %</b>인지 바로 보이고, 내 기록에 맞춘 8주 프로그램이 만들어집니다. 첫 7일 무료.</p>
   <a class="btn" href="https://apps.apple.com/app/id6789622194">App Store에서 받기</a>
 </div>
-<footer>My WOD Coach · 매일의 와드는 결정론 엔진이 생성합니다 · <a href="https://kmg28801.github.io/my-wod-coach-site/wod/">지난 와드 보기</a></footer>
+<footer>My WOD Coach · 무료 Daily WOD는 매주 새로 생성됩니다 · <a href="https://kmg28801.github.io/my-wod-coach-site/wod/">지난 와드 보기</a></footer>
 </main></body>
 </html>
