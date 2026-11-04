@@ -102,6 +102,8 @@ h2{font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:var(--dim)
   letter-spacing:-.015em;margin-bottom:2px}
 .btn{display:inline-block;background:var(--accent);color:#141414;padding:13px 24px;
   border-radius:10px;font-weight:800;font-size:15px;letter-spacing:-.01em}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btn.ghost{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 1px var(--line2)}
 .cta small{display:block;margin-top:13px;color:var(--dim);font-size:12.5px}
 
 footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);
@@ -119,7 +121,7 @@ footer a{color:var(--dim);text-decoration:underline;text-underline-offset:3px}
 </head>
 <body><main>
 <div class="top"><a class="brand" href="https://kmg28801.github.io/my-wod-coach-site/">WOD Recipe</a><span class="sep">/</span><a class="sub" href="https://kmg28801.github.io/my-wod-coach-site/wod/">와드 아카이브</a></div>
-<nav class="strip" aria-label="날짜별 와드"><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-26/"><b>9.26</b><span>토</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-25/"><b>9.25</b><span>금</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-24/"><b>9.24</b><span>목</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-23/"><b>9.23</b><span>수</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-22/"><b>9.22</b><span>화</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-21/"><b>9.21</b><span>월</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-19/" class="on"><b>9.19</b><span>토</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-18/"><b>9.18</b><span>금</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-17/"><b>9.17</b><span>목</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-16/"><b>9.16</b><span>수</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-15/"><b>9.15</b><span>화</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-09-14/"><b>9.14</b><span>월</span></a></nav><p class="wod-date">2026년 9월 19일 토요일</p>
+<nav class="strip" aria-label="날짜별 와드"><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-11-04/"><b>11.4</b><span>수</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-11-03/"><b>11.3</b><span>화</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-11-02/"><b>11.2</b><span>월</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-10-31/"><b>10.31</b><span>토</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-10-30/"><b>10.30</b><span>금</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-10-29/"><b>10.29</b><span>목</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-10-28/"><b>10.28</b><span>수</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-10-27/"><b>10.27</b><span>화</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-10-26/"><b>10.26</b><span>월</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-10-24/"><b>10.24</b><span>토</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-10-23/"><b>10.23</b><span>금</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-10-22/"><b>10.22</b><span>목</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-10-21/"><b>10.21</b><span>수</span></a><a href="https://kmg28801.github.io/my-wod-coach-site/wod/2026-10-20/"><b>10.20</b><span>화</span></a></nav><p class="wod-date">2026년 9월 19일 토요일</p>
 <h1>Loaded Windows</h1>
 <div class="tags"><span>인터벌</span><span>mixed</span></div><section class="part">
   <div class="phead"><span class="kind">준비</span><span class="plabel">General Prep</span></div>
@@ -141,9 +143,9 @@ footer a{color:var(--dim);text-decoration:underline;text-underline-offset:3px}
     <li><b>약점 개선 프로그램을 제공합니다</b>약점 동작을 입력하면 그 패턴을 주차마다 의도적으로 배치합니다.</li>
     <li><b>8주 주기화 프로그램</b>볼륨과 강도가 계획대로 오르고, 4주차 디로드와 8주차 재측정이 진행됩니다. 8주 블록 결과를 바탕으로 다음 블록 난이도가 조정됩니다.</li>
   </ul>
-  <a class="btn" href="https://apps.apple.com/app/id6789622194">App Store에서 받기</a>
+  <div class="btns"><a class="btn" href="https://apps.apple.com/app/id6789622194">App Store에서 받기</a><a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.taejoong.mywodcoach">Google Play에서 받기</a></div>
   <small>첫 7일 무료 · 체험 중 해지하면 요금이 청구되지 않습니다</small>
 </div>
-<footer>WOD Recipe · 무료 Daily WOD는 매주 새로 생성됩니다 · <a href="https://kmg28801.github.io/my-wod-coach-site/wod/">지난 와드 보기</a></footer>
+<footer>WOD Recipe · 무료 Daily WOD는 매일 올라옵니다 · <a href="https://kmg28801.github.io/my-wod-coach-site/wod/">지난 와드 보기</a></footer>
 </main></body>
 </html>
